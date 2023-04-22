@@ -5,12 +5,15 @@
 	<style>
 		body {
 			background-color: #D1E7DD;
+			margin: 0;
+			padding: 0;
 		}
 		nav {
 			background-color: #FFFFFF;
 			position: fixed;
 			top: 0;
 			width: 100%;
+			z-index: 1;
 		}
 		nav ul {
 			display: flex;
@@ -30,24 +33,47 @@
 			text-decoration: none;
 			color: #000000;
 		}
+		.placeholder {
+			height: 50px;
+		}
+		.container {
+			max-width: 960px;
+			margin: auto;
+			padding: 20px;
+			box-sizing: border-box;
+			position: relative;
+			top: 60px;
+		}
+		.image-container {
+			text-align: center;
+			margin: 20px 0;
+		}
+		.image-container img {
+			max-width: 100%;
+			height: auto;
+		}
 	</style>
 </head>
 <body>
 	<header>
+		<div class="placeholder"></div>
 		<h1>Welcome to my website</h1>
 	</header>
-	<main>
+	<main class="container">
 		<p>This is the main content of my homepage.</p>
 		<p>Feel free to explore the rest of my website using the navigation menu above.</p>
+		<div class="image-container">
+			<img src="https://p1.itc.cn/images01/20210415/285620f9f7e24d6d8494bc72d0e4515c.jpeg" alt="A beautiful landscape">
+		</div>
 	</main>
 	<footer>
 		<p>&copy; 2023 My Website. All rights reserved.</p>
 	</footer>
 	<nav>
 		<ul>
-			<li><a href="academic.html">Academic</a></li>
-			<li><a href="daily.html">Daily</a></li>
-			<li><a href="ai-art.html">AI Art</a></li>
+			<li><a href="#">Academic</a></li>
+			<li><a href="#">Daily</a></li>
+			<li><a href="#">AI Art</a></li>
 		</ul>
 	</nav>
 </body>
