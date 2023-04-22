@@ -4,7 +4,7 @@
 	<title>My Blog</title>
 	<style>
 		body {
-			background-color: #D1E7DD;
+			background-color: #F5F5F5;
 			margin: 0;
 			padding: 0;
 		}
@@ -35,21 +35,6 @@
 			box-sizing: border-box;
 			text-align: center;
 		}
-		.image-container {
-			margin: 20px 0;
-			position: relative;
-			width: 50%;
-			float: right;
-			text-align: right;
-		}
-		.image-container img {
-			max-width: 50%;
-			height: auto;
-			max-height: 300px;
-			position: absolute;
-			right: 0;
-			bottom: 0;
-		}
 		.title {
 			color: #000000;
 			font-size: 36px;
@@ -61,29 +46,52 @@
 			font-size: 18px;
 			margin-bottom: 20px;
 		}
+		.btn {
+			background-color: #FFFFFF;
+			border: none;
+			color: #000000;
+			padding: 10px 20px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px 5px;
+			cursor: pointer;
+			border-radius: 5px;
+			text-decoration: none;
+			box-shadow: 2px 2px 2px #888888;
+		}
+		.btn:hover {
+			background-color: #F5F5F5;
+		}
+		.photo {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			max-width: 300px;
+			max-height: 200px;
+			border-radius: 10px;
+			box-shadow: 2px 2px 2px #888888;
+		}
 	</style>
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="academic.html">Academic</a></li>
 				<li><a href="daily.html">Daily</a></li>
 				<li><a href="ai-art.html">Technology</a></li>
 			</ul>
 		</nav>
-		<div class="image-container">
-			<img src="樱木花道.jpeg" alt="樱木花道">
-		</div>
 		<h1 class="title">Welcome to my blog</h1>
 	</header>
 	<main class="container">
-		<p class="content">This is the main content of my blog.</p>
+		<p class="content">This is the main content of my homepage.</p>
 		<p class="content">Feel free to explore the rest of my website using the navigation menu above.</p>
+		<a href="academic.html" class="btn">Academic</a>
+		<a href="daily.html" class="btn">Daily</a>
+		<a href="ai-art.html" class="btn">Technology</a>
 	</main>
 	<footer>
-		<p>&copy; 2023 My Blog. All rights reserved.</p>
-	</footer>
-</body>
-</html>
-
+		<p>&copy
