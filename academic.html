@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Academic - My Website</title>
+	<title>Academic</title>
 	<style>
 		body {
 			background-color: #D1E7DD;
+			margin: 0;
+			padding: 0;
 		}
 		nav {
 			background-color: #FFFFFF;
-			position: fixed;
-			top: 0;
+			position: relative;
 			width: 100%;
+			text-align: center;
 		}
 		nav ul {
-			display: flex;
+			display: inline-block;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			justify-content: space-between;
-			align-items: center;
-			max-width: 960px;
-			height: 50px;
-			margin: auto;
 		}
 		nav li {
+			display: inline-block;
 			margin: 0 10px;
 		}
 		nav a {
 			text-decoration: none;
 			color: #000000;
 		}
-		main {
+		.container {
 			max-width: 960px;
-			margin: 80px auto;
+			margin: auto;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
 		}
-		h2 {
-			font-size: 24px;
+		.title {
+			color: #000000;
+			font-size: 36px;
 			font-weight: bold;
-			margin-top: 0;
-		}
-		ul {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-		}
-		li {
+			margin-top: 20px;
 			margin-bottom: 10px;
+		}
+		.content {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.btn {
+			display: inline-block;
+			background-color: #000000;
+			color: #FFFFFF;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin: 10px;
+		}
+		.btn:hover {
+			background-color: #FFFFFF;
+			color: #000000;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Academic</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Physics</a></li>
+				<li><a href="#">Economic</a></li>
+				<li><a href="#">Mathematics</a></li>
+				<li><a href="#">Breadth Courses</a></li>
+			</ul>
+		</nav>
+		<h1 class="title">Academic</h1>
 	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Physics</a></li>
-			<li><a href="#">Economics</a></li>
-			<li><a href="#">Mathematics</a></li>
-			<li><a href="#">Breadth Courses</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h2>Physics</h2>
-		<ul>
-			<li><a href="#">Mechanics</a></li>
-			<li><a href="#">Thermodynamics</a></li>
-			<li><a href="#">Electromagnetism</a></li>
-			<li><a href="#">Optics</a></li>
-			<li><a href="#">Quantum Mechanics</a></li>
-			<li><a href="#">Astrophysics</a></li>
-		</ul>
-		<h2>Economics</h2>
-		<ul>
-			<li><a href="#">Microeconomics</a></li>
-			<li><a href="#">Macroeconomics</a></li>
-			<li><a href="#">International Economics</a></li>
-			<li><a href="#">Finance</a></li>
-			<li><a href="#">Development Economics</a></li>
-			<li><a href="#">Behavioral Economics</a></li>
-		</ul>
-		<h2>Mathematics</h2>
-		<ul>
-			<li><a href="#">Calculus</a></li>
-			<li><a href="#">Linear Algebra</a></li>
-			<li><a href="#">Differential Equations</a></li>
-			<li><a href="#">Probability Theory</a></li>
-			<li><a href="#">Mathematical Statistics</a></li>
-			<li><a href="#">Topology</a></li>
-		</ul>
-		<h2>Breadth Courses</h2>
-		<ul>
-			<li><a href="#">History</a></li>
-			<li><a href="#">
+	<main class="container">
+		<p class="content">Welcome to my academic page!</p>
+		<a href="index.html" class="btn">Return</a>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
