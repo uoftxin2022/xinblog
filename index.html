@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
+	<title>My Blog</title>
 	<style>
 		body {
 			background-color: #D1E7DD;
@@ -10,71 +10,72 @@
 		}
 		nav {
 			background-color: #FFFFFF;
-			position: fixed;
-			top: 0;
+			position: relative;
 			width: 100%;
-			z-index: 1;
+			text-align: center;
 		}
 		nav ul {
-			display: flex;
+			display: inline-block;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			justify-content: space-between;
-			align-items: center;
-			max-width: 960px;
-			height: 50px;
-			margin: auto;
 		}
 		nav li {
+			display: inline-block;
 			margin: 0 10px;
 		}
 		nav a {
 			text-decoration: none;
 			color: #000000;
 		}
-		.placeholder {
-			height: 50px;
-		}
 		.container {
 			max-width: 960px;
 			margin: auto;
 			padding: 20px;
 			box-sizing: border-box;
-			position: relative;
-			top: 60px;
+			text-align: center;
 		}
 		.image-container {
-			text-align: center;
 			margin: 20px 0;
 		}
 		.image-container img {
 			max-width: 100%;
 			height: auto;
 		}
+		.title {
+			color: #000000;
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.content {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
 	</style>
 </head>
 <body>
 	<header>
-		<div class="placeholder"></div>
-		<h1>Welcome to my website</h1>
+		<nav>
+			<ul>
+				<li><a href="academic.html">物理</a></li>
+				<li><a href="#">经济</a></li>
+				<li><a href="#">数学</a></li>
+				<li><a href="#">广度课</a></li>
+			</ul>
+		</nav>
+		<div class="image-container">
+			<img src="樱木花道.jpg" alt="樱木花道">
+		</div>
+		<h1 class="title">Welcome to my blog</h1>
 	</header>
 	<main class="container">
-		<p>This is the main content of my homepage.</p>
-		<p>Feel free to explore the rest of my website using the navigation menu above.</p>
-		<div class="image-container">
-			<img src="https://p1.itc.cn/images01/20210415/285620f9f7e24d6d8494bc72d0e4515c.jpeg" alt="A beautiful landscape">
-		</div>
+		<p class="content">This is the main content of my blog.</p>
+		<p class="content">Feel free to explore the rest of my website using the navigation menu above.</p>
 	</main>
 	<footer>
-		<p>&copy; 2023 My Website. All rights reserved.</p>
+		<p>&copy; 2023 My Blog. All rights reserved.</p>
 	</footer>
-	<nav>
-		<ul>
-			<li><a href="#">Academic</a></li>
-			<li><a href="#">Daily</a></li>
-			<li><a href="#">AI Art</a></li>
-		</ul>
-	</nav>
 </body>
 </html>
