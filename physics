@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Physics</title>
+	<style>
+		/* 在这里添加样式 */
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Physics</a></li>
+				<li><a href="#">Economic</a></li>
+				<li><a href="#">Mathematics</a></li>
+				<li><a href="#">Breadth Courses</a></li>
+			</ul>
+		</nav>
+		<h1 class="title">Physics</h1>
+	</header>
+	<main class="container">
+		<!-- 在这里添加页面内容 -->
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
