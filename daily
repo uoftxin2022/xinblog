@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #F5F5F5;
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			background-color: #FFFFFF;
+			position: relative;
+			width: 100%;
+			text-align: center;
+		}
+		nav ul {
+			display: inline-block;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		nav a {
+			text-decoration: none;
+			color: #000000;
+		}
+		.container {
+			max-width: 960px;
+			margin: auto;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.title {
+			color: #000000;
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.content {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="academic.html">Academic</a></li>
+				<li><a href="daily.html">Daily</a></li>
+				<li><a href="ai-art.html">Technology</a></li>
+			</ul>
+		</nav>
+		<h1 class="title">Daily Page</h1>
+	</header>
+	<main class="container">
+		<p class="content">This is the main content of my daily page.</p>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>
