@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>My Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body {
 			background-image: url("https://pic1.zhimg.com/80/c0e6a1fb76775b05fc5acf8200ab3b8c_720w.webp?source=1940ef5c");
@@ -66,14 +67,22 @@
 			background-color: #F5F5F5;
 		}
 		.photo {
-			position: absolute;
-			bottom: 20px;
-			right: 20px;
-			max-width: 300px;
+			max-width: 100%;
 			max-height: 200px;
 			border-radius: 10px;
 			box-shadow: 2px 2px 2px #888888;
 		}
+		
+		/* 响应式设计 */
+		@media only screen and (max-width: 600px) {
+			body {
+				font-size: 16px;
+			}
+			.photo {
+				max-height: 150px;
+			}
+		}
+		
 	</style>
 </head>
 <body>
@@ -89,12 +98,31 @@
 		<h1 class="title">Welcome to my blog</h1>
 	</header>
 	<main class="container">
-	<p class="content">This is the main content of my homepage.</p>
-	<p class="content">Feel free to explore the rest of my website using the navigation menu above.</p>
-	<a href="academic.html" class="btn">Academic</a>
-	<a href="daily.html" class="btn">Daily</a>
-	<a href="ai-art.html" class="btn">Technology</a>
-	<img src="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg" alt="a beautiful mountain" class="photo">
+		<p class="content">This is the main content of my homepage.</p>
+		<p class="content">Feel free to explore the rest of my website using the navigation menu above.</p>
+		<a href="academic.html" class="btn">Ac
+				<a href="daily.html" class="btn">Daily</a>
+		<a href="ai-art.html" class="btn">Technology</a>
+		
+		<!-- 使用srcset属性 -->
+		<img srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 960w,
+					 https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 640w,
+					 https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 320w"
+			 sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+			 src="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg"
+			 alt="a beautiful mountain" class="photo">
+		
+		<!-- 使用picture元素 -->
+		<picture>
+			<source media="(min-width: 600px)" srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg">
+			<source media="(min-width: 320px)" srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg">
+			<img src="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg" alt="a beautiful mountain" class="photo">
+		</picture>
+		
 	</main>
 	<footer>
-		<p>&copy
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>
+
