@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #F5F5F5;
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			background-color: #FFFFFF;
+			position: relative;
+			width: 100%;
+			text-align: center;
+		}
+		nav ul {
+			display: inline-block;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		nav a {
+			text-decoration: none;
+			color: #000000;
+		}
+		.container {
+			max-width: 960px;
+			margin: auto;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.title {
+			color: #000000;
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.content {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.btn {
+			background-color: #FFFFFF;
+			border: none;
+			color: #000000;
+			padding: 8px 16px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px 5px;
+			cursor: pointer;
+			border-radius: 5px;
+			text-decoration: none;
+			box-shadow: 2px 2px 2px #888888;
+		}
+		.btn:hover {
+			background-color: #F5F5F5;
+		}
+		.photo {
+			max-width: 100%;
+			max-height: 200px;
+			border-radius: 10px;
+			box-shadow: 2px 2px 2px #888888;
+		}
+		
+		/* 响应式设计 */
+		@media only screen and (max-width: 600px) {
+			body {
+				font-size: 16px;
+			}
+			.photo {
+				max-height: 150px;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="academic.html">Academic</a></li>
+				<li><a href="daily.html">Daily</a></li>
+				<li><a href="ai-art.html">Technology</a></li>
+			</ul>
+		</nav>
+		<h1 class="title">Technology Page</h1>
+	</header>
+	<main class="container">
+		<p class="content">This is the main content of my technology page.</p>
+		<p class="content">Here you can find information on the latest technology trends and innovations.</p>
+		<p class="content">You can also check out our AI drawing tool below:</p>
+		<!-- Insert your AI drawing tool code here -->
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>
