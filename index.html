@@ -99,20 +99,29 @@
 	</header>
 	<main class="container">
 		<p class="content">This is the main content of my homepage.</p>
-		<p class="content">Feel free to explore
-			<!-- 使用picture元素 -->
+		<p class="content">Feel free to explore the rest of my website using the navigation menu above.</p>
+		<div style="display: flex; justify-content: center; align-items:
+			<!-- 使用srcset属性 -->
+		<img srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 960w,
+					 https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 640w,
+					 https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg 320w"
+			 sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+			 src="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg"
+			 alt="a beautiful mountain" class="photo">
+		
+		<!-- 使用picture元素 -->
 		<picture>
 			<source media="(min-width: 600px)" srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg">
 			<source media="(min-width: 320px)" srcset="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg">
 			<img src="https://www.kt5.cn/wp-content/uploads/2019/08/ymhd_0.jpg" alt="a beautiful mountain" class="photo">
 		</picture>
 		
+		<a href="academic.html" class="btn">Academic</a>
+		<a href="daily.html" class="btn">Daily</a>
+		<a href="ai-art.html" class="btn">Technology</a>
 	</main>
 	<footer>
 		<p>&copy; 2023 My Blog</p>
 	</footer>
 </body>
 </html>
-
-
-
